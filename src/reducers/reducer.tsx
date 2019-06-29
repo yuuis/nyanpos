@@ -21,11 +21,13 @@ export const reducer = (state: GlobalState, action: Action) => {
         }
         : state;
     case CREATE_CLAP:
-      if (action.crap) { return state; }
-
-      state.users.splice(state.users.indexOf(action.crap.post.send_user), 1);
-      state.users.splice(state.users.indexOf(action.crap.post.receive_user), 1);
-      state.users.splice(state.users.indexOf(action.crap.user), 1);
+      if (action.crap !== undefined) {
+        state.users.splice(state.users.indexOf(action.crap.post.send_user), 1);
+        state.users.splice(state.users.indexOf(action.crap.post.receive_user), 1);
+        state.users.splice(state.users.indexOf(action.crap.user), 1);
+      } else {
+        return state;
+      }
 
       return action.crap
         ? {
