@@ -43,7 +43,7 @@ export const reducer = (state: GlobalState, action: Action) => {
             },
             {
               ...action.crap.user,
-              points: action.crap.user.points++
+              points: action.crap.user.points - 2
             }
           ]
         }
