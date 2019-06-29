@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {User} from "../../models/User";
+import Header from "../Header";
 
 export interface AppProps {
   users: User[]
@@ -10,19 +11,7 @@ export interface AppProps {
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
     </div>
   );
 };
