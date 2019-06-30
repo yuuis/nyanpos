@@ -11,7 +11,7 @@ export interface AppProps {
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Header/>
+      <Header />
     </div>
   );
 };
