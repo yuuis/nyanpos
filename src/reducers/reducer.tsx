@@ -1,11 +1,11 @@
-import { GlobalState } from '../models/GlobalState'
+import { GeneralState } from '../models/GeneralState'
 import {CHANGE_CURRENT_USER, CREATE_CLAP, CREATE_POST, INIT} from "../constatnts/actionTypes";
-import {Action, initialGlobalState} from "./common";
+import {Action, initialGeneralState} from "./common";
 
-export const reducer = (state: GlobalState, action: Action) => {
+export const reducer = (state: GeneralState, action: Action) => {
   switch (action.type) {
     case INIT:
-      return initialGlobalState;
+      return initialGeneralState;
     case CHANGE_CURRENT_USER:
       return action.user
         ? {

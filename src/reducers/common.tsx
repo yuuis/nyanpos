@@ -1,5 +1,5 @@
 import uuid from "uuid";
-import {GlobalState} from "../models/GlobalState";
+import {GeneralState} from "../models/GeneralState";
 import {User} from "../models/User";
 import {Post} from "../models/Post";
 import {Crap} from "../models/Crap";
@@ -34,14 +34,14 @@ const initialUsers: User[] = [
 const initialPosts: Post[] = [];
 const initialCraps: Crap[] = [];
 
-export const initialGlobalState: GlobalState = {
+export const initialGeneralState: GeneralState = {
   posts: initialPosts,
   users: initialUsers,
   craps: initialCraps,
   currentUser: initialUsers[0]
 };
 
-export type GlobalState = typeof initialGlobalState
+export type GeneralState = typeof initialGeneralState
 
 export interface Action {
   type: string
