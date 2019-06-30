@@ -1,8 +1,8 @@
 import React from 'react'
-import { useLocalStorageReducer } from 'react-storage-hooks'
+import {useLocalStorageReducer} from 'react-storage-hooks'
 import {Action, initialGeneralState} from "../reducers/common";
 import {reducer} from "../reducers/reducer";
-import {GeneralState} from "../models/GeneralState";
+import {GeneralState} from "./generalState";
 
 const { createContext, useContext } = React;
 const stateContext = createContext(initialGeneralState);

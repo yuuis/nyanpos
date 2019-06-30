@@ -1,4 +1,4 @@
-import { GeneralState } from '../models/GeneralState'
+import {GeneralState} from '../stores/generalState'
 import {CHANGE_CURRENT_USER, CREATE_CLAP, CREATE_POST, INIT} from "../constatnts/actionTypes";
 import {Action, initialGeneralState} from "./common";
 

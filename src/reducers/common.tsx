@@ -1,5 +1,5 @@
 import uuid from "uuid";
-import {GeneralState} from "../models/GeneralState";
+import {GeneralState} from "../stores/generalState";
 import {User} from "../models/User";
 import {Post} from "../models/Post";
 import {Crap} from "../models/Crap";
